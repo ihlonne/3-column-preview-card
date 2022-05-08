@@ -24,11 +24,151 @@ body {
     box-sizing: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    min-height: 100vh;
+    background-color: var(--very-light-grey);
     font-family: 'Lexend Deca', sans-serif;
+    color: var(--paragraphs);
 }
 
 h1 {
+    color: #fff;
     font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+p {
+    margin-top: 30px;
+    padding: 0 30px 0 0;
+    line-height: 1.7;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    height: 35px;
+    width: 55px;
+    margin-left: 10px;
+}
+
+.card-orange {
+    padding: 40px;
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card-darkcyan {
+    padding: 40px;
+    background-color: var(--dark-cyan);
+}
+
+.card-verydarkcyan {
+    padding: 40px;
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn#orange {
+    color: var(--bright-orange);
+    border: 1px solid transparent;
+}
+
+.btn#orange:hover {
+    background: var(--bright-orange);
+    color: white;
+    border: 1px solid #fff;
+}
+
+.btn#cyan {
+    color: var(--dark-cyan);
+    border: 1px solid transparent;
+}
+
+.btn#cyan:hover {
+    background-color: var(--dark-cyan);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn#dark-cyan {
+    color: var(--very-dark-cyan);
+    border: 1px solid transparent;
+}
+
+.btn#dark-cyan:hover {
+    background-color: var(--very-dark-cyan);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.attribution { 
+    color: black;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* Desktop settings */ 
+
+@media only screen and (min-width: 1440px) {
+
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .card-orange {
+        width: 240px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .card-darkcyan {
+        width: 240px;
+    }
+
+    .card-verydarkcyan {
+        width: 240px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .btn#orange {
+        margin-top: 80px;
+        color: var(--bright-orange);
+        border: 1px solid transparent;
+    }
+    
+    
+    .btn#cyan {
+        margin-top: 80px;
+        color: var(--dark-cyan);
+        border: 1px solid transparent;
+    }
+
+    .btn#dark-cyan {
+        margin-top: 80px;
+        color: var(--dark-cyan);
+        border: 1px solid transparent;
+    }
 }
